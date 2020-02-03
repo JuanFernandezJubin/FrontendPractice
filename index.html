@@ -9,23 +9,55 @@
 <style>
     body {
         margin: 0px;
+        background-color: #AB88FF;
     }
-    header {
-        background-color: #21C08B;
+    .header {
+        background-color: #AB88FF;
         width: 100%;
         height: 80px;
     }
     
-    header img {
+    .header__img {
         width: 200px;
         margin-top: 10px;
         margin-left: 10px;
     }
 
+    .header__menu {
+        margin-right: 30px;
+    }
+
+    .header__menu ul {
+        /*display: none;*/
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        width: 100px;
+        text-align: right;
+        margin: 0px 0px 0px -14px;
+    }
+
+    .header__menu--profile {
+        margin-right: 8px;
+        width: 40px;
+    }
+
 </style>
 <body>
-    <header>
-        <img src="C:\Users\Usuario\Desktop\Platzi\Frontend developer\Frontend Practice\images\platzilogo.png" alt="PlatziLogo">
+    <header class = "header">
+        <img class ="header__img" src="C:\Users\Usuario\Desktop\Platzi\Frontend developer\Frontend Practice\images\platzilogo.png" alt="PlatziLogo">
+        <div class="header__menu">
+            <divc class="header__menu--profile">
+                <img src="https://img.icons8.com/cute-clipart/64/000000/user-shield.png" alt="User">
+                <p>Perfil</p>
+                <div>
+                    <ul>
+                        <li><a href="/"></a>Cuenta</li>
+                        <li><a href="/"></a>Cerrar Sesión</li>
+                    </ul>
+                </div>
+            </divc>
+        </div>
     </header>    
 </body>
 </html>
